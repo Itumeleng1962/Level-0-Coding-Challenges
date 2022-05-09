@@ -1,14 +1,18 @@
-function getSameLetters(string1, string2) {
-const commonCharacters = "";
-  let sameLetter = "CommonLetters:";
-  for (let i = 0; i < string1.length; i++) {
-    if (sameLetter.indexOf(string1[i]) === -1) {
-      if (string2.indexOf(string1[i]) !== -1) {
-        sameLetter += string1[i];
+function commmonCharacters(str1, str2) {
+  let saveCommonCharacters = [];
+  for (let i = 0; i < str2.length; i++) {
+    for (let j = 0; j < str1.length; j++) {
+      if (str1[j].toLowerCase() === str2[i].toLowerCase()) {
+        saveCommonCharacters.push(str1[j].toLowerCase());
       }
     }
   }
-  return sameLetter;
-};
-
-console.log(getSameLetters());
+  saveCommonCharacters = [...new Set(saveCommonCharacters)];
+  let commmonCharacters = "Common letters: ";
+  for (let i = 0; i < saveCommonCharacters.length; i++) {
+    commmonCharacters += saveCommonCharacters[i];
+    if (i < saveCommonCharacters.length - 1) commmonCharacters += ", ";
+  }
+  console.log(commmonCharacters);
+}
+commmonCharacters("House","computers")
