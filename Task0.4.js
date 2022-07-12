@@ -1,8 +1,8 @@
 function evenOrOdd(val) {
       if (val % 2 == 0) {
-       console.log("This number is even");
+       console.log("even");
         } else {
-         console.log("This number is odd");
+         console.log("odd");
         }
 
  }
