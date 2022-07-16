@@ -13,7 +13,7 @@ function getVowels(name) {
         for (let i = 0; i < holdVowels.length; i++) {
           let countVowels = 0;
           for (let j = 0; j < holdVowels.length; j++) {
-            if (holdVowels[i] == holdVowels[j]) {
+            if (holdVowels[i] === holdVowels[j]) {
               countVowels++;
             }
             if (countVowels > 1) {
