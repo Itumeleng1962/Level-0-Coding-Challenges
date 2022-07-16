@@ -1,6 +1,0 @@
-let x = 3;
-let y = 4;
-let z = 3;
-let a = 2;
-let b = 1.5;
-console.log(x, y, z, a, b)
