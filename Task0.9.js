@@ -2,7 +2,7 @@ function getVowels(name) {
   const vowels = ["a", "e", "i", "o", "u"];
 
   name = name.toLowerCase();
-  let holdVowels = [];
+  const holdVowels = [];
   let output = "Vowels: ";
 
   for (let i = 0; i < name.length; i++) {
