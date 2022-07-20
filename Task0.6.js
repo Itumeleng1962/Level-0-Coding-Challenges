@@ -16,4 +16,4 @@ function getMax(num1, num2, num3, ...otherNumbers) {
 
   return maxValue;
 }
-  getMax()
+  getMax(2,7,5)
