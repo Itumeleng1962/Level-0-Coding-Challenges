@@ -18,4 +18,4 @@ function getSameLetters(string1, string2) {
     console.log(sameLetters);
   }
 
-getSameLetters(); 
+getSameLetters("computer","house"); 
